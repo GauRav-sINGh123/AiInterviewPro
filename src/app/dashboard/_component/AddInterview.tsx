@@ -52,7 +52,7 @@ function AddInterview() {
     e.preventDefault();
     setLoading(true);
   
-    const InputPrompt = `Job Role: ${data.role}, Skills: ${data.skills}, Experience: ${data.experience}. Based on the above information, generate a list of 8 questions and answers that the interviewer should ask the candidate in a technical interview in JSON format. Give the questions and answer fields on JSON.`;
+    const InputPrompt = `Job Role: ${data.role}, Skills: ${data.skills}, Experience: ${data.experience}. Based on the above information, generate a list of 10 questions and answers that the interviewer should ask the candidate in a technical interview in JSON format. Give the questions and answer fields on JSON.`;
   
     try {
       const result = await chatSession.sendMessage(InputPrompt);
