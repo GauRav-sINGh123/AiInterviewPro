@@ -38,8 +38,7 @@ function Record() {
            
       </div>
       <div className="flex justify-center gap-3">
-      <h1>Recording: {isRecording.toString()}</h1>
-      <button onClick={isRecording ? stopSpeechToText : startSpeechToText}>
+      <button className="bg-transparent border mt-1 border-gray-500 px-6 py-2 rounded-lg cursor-pointer" onClick={isRecording ? stopSpeechToText : startSpeechToText}>
         {isRecording ? 'Stop Recording' : 'Start Recording'}
       </button>
       <ul>
